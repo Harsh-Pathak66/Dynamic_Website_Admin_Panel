@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/admin/css/style.css">
+    </head>
+<body>
+    
+    <%-include('../../partials/admin/header.ejs')%>
+
+    <section id="mid">
+        <div class="container">
+            <div class="row">
+                <%-include('../../partials/admin/left.ejs')%>
+                <div class="col-md-9">
+                    <h2>Address Update Here</h2>
+                    <form action="" method="post">
+                        <label for="">Company Address</label>
+                        <input type="text" name="ca" id="" class="form-control" value="<%=record.cadd%>">
+                        <label for="">Phone Number</label>
+                        <input type="number" name="cp" id="" class="form-control" value="<%=record.phone%>">
+                        <label for="">Mobile Number</label>
+                        <input type="number" name="cm" id="" class="form-control" value="<%=record.mobile%>" >
+                        <label for="">E Mail</label>
+                        <input type="email" name="ce" id="" class="form-control" value="<%=record.email%>">
+                        <label for="">Instagram</label>
+                        <input type="text" name="ci" id="" class="form-control" value="<%=record.insta%>">
+                        <label for="">Linkedin</label>
+                        <input type="text" name="cl" id="" class="form-control" value="<%=record.linkedin%>">
+                        <label for="">Twitter</label>
+                        <input type="text" name="ct" id="" class="form-control" value="<%=record.twitter%>">
+                        <label for="">Snapchat</label>
+                        <input type="text" name="cs" id="" class="form-control" value="<%=record.snap%>">
+                        <button type="submit" class="btn btn-warning mt-2 form-control">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+   <%-include('../../partials/admin/footer.ejs')%>
+
+</body>
+</html>
